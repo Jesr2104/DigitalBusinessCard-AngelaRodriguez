@@ -1,0 +1,314 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1040, height=2034">
+  <title>Página con Banner</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #F3EEE1;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: start;
+    }
+
+    .container {
+      width: 1040px;
+      border: 1px solid rgba(0, 0, 0, 0.112);
+      box-sizing: border-box;
+    }
+
+    .banner {
+      position: relative;
+      width: 1040px;
+      height: 560px;
+      background-image: url('banner-principal.png');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .foto-circular {
+      position: absolute;
+      width: 370px;
+      height: 370px;
+      border-radius: 50%;
+      top: 85px;
+      left: 85px;
+      object-fit: cover;
+      border: 4px solid white;
+    }
+
+    .foto-cuadrada {
+      position: absolute;
+      width: 140px;
+      height: 95px;
+      bottom: 65px;
+      left: 50%;
+      transform: translateX(-50%);
+      object-fit: cover;
+    }
+
+    .contenido {
+      text-align: center;
+      padding: 5px 0;
+    }
+
+    .titulo {
+      font-size: 59px;
+      font-weight: bold;
+      margin: 10px 0 5px;
+      color: #0F4F50;
+    }
+
+    .subtitulo {
+      font-size: 30px;
+      font-weight: normal;
+      margin-bottom: 0px;
+      color: #0F4F50;
+    }
+
+    .imagen-centro {
+      width: 804px;
+      height: 84px;
+      margin: 0 auto 0px;
+      display: block;
+    }
+
+    .texto-justificado {
+      font-size: 35px;
+      width: 80%;
+      margin: 0 auto;
+      text-align: justify;
+      line-height: 1.5;
+      color: #0F4F50;
+      margin-bottom: 15px;
+    }
+
+    .contenedor-servicios {
+      width: 55%;
+      margin: 0 auto;
+      padding-bottom: 0px;
+      text-align: left;
+    }
+
+    .item {
+        display: flex;
+        align-items: center;
+    }
+
+    .item .icon {
+        margin-right: 15px;
+    }
+
+    .item .icon img {
+        width: 76px;
+        height: 42px;
+    }
+
+    .item-text {
+        font-weight: bold;
+        font-size: 30px;
+        color: #0F4F50;
+    }
+
+    .social-banner {
+        width: 100%;
+        height: 105px;
+        background-color: #0F5454;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        gap: 30px; /* espacio entre íconos y separadores */
+    }
+
+    .social-banner img {
+        width: 62px;
+        height: 62px;
+    }
+
+    .separator {
+        width: 2px;
+        height: 37px;
+        background-color: white;
+    }
+
+        .center-wrapper {
+        display: flex;
+        justify-content: center;
+        background-color: #f5f0e6;
+    }
+
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        font-family: sans-serif;
+        padding: 10px 0;
+        margin-top: 25px;
+    }
+
+    .contact-item {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .contact-item img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .contact-text {
+        font-size: 25px;
+        font-weight: bold;
+        color: #4a4a4a;
+    }
+
+    .banner-container {
+        position: relative;
+        width: 100%;
+        height: 86px;
+        margin-top: 35px;
+    }
+
+    .black-banner {
+        width: 100%;
+        height: 86px;
+        background-color: #000000;
+    }
+
+    .banner-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 86px;
+        object-fit: cover;
+        z-index: 1;
+    }
+
+    .banner-link {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+    }
+
+        .button-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .add-contact-btn {
+        padding: 20px 40px;
+        font-size: 28px; /* Tamaño tipo título */
+        font-weight: bold;
+        background-color: #F3EEE1;
+        color: #0E4E50;
+        border: 3px solid #0E4E50;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .add-contact-btn:hover {
+        background-color: #e3ddd0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+        <div class="banner">
+            <img src="foto_redonda.jpg" alt="Foto Circular" class="foto-circular">
+            <img src="logo.png" alt="Foto Cuadrada" class="foto-cuadrada">
+        </div>
+
+        <div class="contenido">
+            <div class="titulo">Ángela Rodríguez</div>
+            <div class="subtitulo">Asesora en Procesos de Salud</div>
+            <img src="separador.png" alt="Imagen centrada" class="imagen-centro">
+            <div class="texto-justificado">
+                Impulsa tu institución de salud con asesoría experta en auditoría, cartera, normativas y procesos. Soy bacterióloga, abogada y magíster en Derecho Administrativo. Combino visión clínica y legal para ayudarte a optimizar tiempos, cumplir normas y lograr resultados sostenibles. Soluciones claras, efectivas y a tu medida.
+            </div>   
+        </div>
+        
+        <div class="contenedor-servicios">
+            <div class="item">
+                <span class="icon">
+                    <img src="vineta.png" alt="Ícono">
+                </span>
+                <span class="item-text">Optimización de procesos.</span>
+            </div>
+            <div class="item">
+                <span class="icon">
+                    <img src="vineta.png" alt="Ícono">
+                </span>
+                <span class="item-text">Auditoría de servicios.</span>
+            </div>
+            <div class="item">
+                <span class="icon">
+                    <img src="vineta.png" alt="Ícono">
+                </span>
+                <span class="item-text">Recuperación de cartera.</span>
+            </div>
+            <div class="item">
+                <span class="icon">
+                    <img src="vineta.png" alt="Ícono">
+                </span>
+                <span class="item-text">Capacitación de equipos.</span>
+            </div>
+            <div class="item">
+                <span class="icon">
+                    <img src="vineta.png" alt="Ícono">
+                </span>
+                <span class="item-text">Asesorías legales en salud.</span>
+            </div>
+        </div>
+
+        <div class="social-banner">
+            <img src="facebook-blanco.png" alt="Facebook">
+            <div class="separator"></div>
+            <img src="instagram-blanco.png" alt="Instagram">
+            <div class="separator"></div>
+            <img src="linkedin-blanco.png" alt="LinkedIn">
+        </div> 
+
+        <div class="center-wrapper">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <img src="phone.png" alt="Teléfono">
+                    <span class="contact-text">+44 123456789</span>
+                </div>
+                <div class="contact-item">
+                    <img src="whatsapp.png" alt="WhatsApp">
+                    <span class="contact-text">+44 123456789</span>
+                </div>
+                <div class="contact-item">
+                    <img src="email.png" alt="Correo">
+                    <span class="contact-text">AngelaRodriguez@gmail.co</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="button-container">
+            <button class="add-contact-btn">Añadir contacto</button>
+        </div>
+
+        <div class="banner-container">
+            <div class="black-banner"></div>
+            <img src="background-origen.png" alt="Fondo del banner" class="banner-image">
+            
+            <a href="https://ww.origen.com" class="banner-link" target="_blank">
+                <img src="origen-link.png" alt="Logo centrado" class="center-image">
+            </a>
+        </div>
+        
+    </div>
+</body>
+</html>
