@@ -1,0 +1,11 @@
+BEGIN:VCARD
+VERSION:3.0
+FN:Juan Pérez
+N:Pérez;Juan;;;
+TEL;TYPE=CELL:+573001112233
+EMAIL:juanperez@email.com
+ORG:Mi Empresa
+TITLE:Gerente de Ventas
+ADR:;;Carrera 7 #45-10;Bogotá;;;
+URL:https://miempresa.com
+END:VCARD
